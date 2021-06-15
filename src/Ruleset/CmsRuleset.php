@@ -37,10 +37,6 @@ final class CmsRuleset extends AbstractRuleset
         'explicit_string_variable' => true,
         'fully_qualified_strict_types' => true,
         'function_typehint_space' => true,
-        'header_comment' => [
-            'comment_type' => 'PHPDoc',
-            'header' => '',
-        ],
         'include' => true,
         'is_null' => [
             'use_yoda_style' => false,
@@ -52,7 +48,7 @@ final class CmsRuleset extends AbstractRuleset
             'on_multiline' => 'ensure_fully_multiline',
         ],
         'method_chaining_indentation' => true,
-        'modernize_types_casting' => true,
+        'modernize_types_casting' => false,
         'multiline_comment_opening_closing' => true,
         'multiline_whitespace_before_semicolons' => true,
         'native_function_casing' => true,
@@ -81,7 +77,7 @@ final class CmsRuleset extends AbstractRuleset
         'no_short_bool_cast' => true,
         'no_singleline_whitespace_before_semicolons' => true,
         'no_spaces_around_offset' => true,
-        'no_superfluous_phpdoc_tags' => true,
+        'no_superfluous_phpdoc_tags' => false,
         'no_trailing_comma_in_list_call' => true,
         'no_trailing_comma_in_singleline_array' => true,
         'no_unused_imports' => true,
