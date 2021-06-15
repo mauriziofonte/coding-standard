@@ -7,10 +7,10 @@ for [php-cs-fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer) to keep our cod
 
 ## Installation
 
-Use `composer` to install `php-cs-fixer` and `mfonte/coding-standard`
+Use `composer` to install `mfonte/coding-standard`. `php-cs-fixer` v2 is automatically installed.
 
 ```bash
-composer require --dev friendsofphp/php-cs-fixer mfonte/coding-standard
+composer require --dev mfonte/coding-standard
 ```
 
 ## Configuration

@@ -1,7 +1,7 @@
 {
     "name": "mfonte/coding-standard",
     "type": "library",
-    "version": "1.0",
+    "version": "1.1",
     "time": "2021-06-15 10:00:00",
     "description": "Provides multiple rule sets for friendsofphp/php-cs-fixer.",
     "license": "Apache-2.0",
