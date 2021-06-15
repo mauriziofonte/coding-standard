@@ -1,0 +1,38 @@
+{
+    "name": "mfonte/coding-standard",
+    "type": "library",
+    "version": "1.0",
+    "time": "2021-06-15 10:00:00",
+    "description": "Provides multiple rule sets for friendsofphp/php-cs-fixer.",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Maurizio Fonte",
+            "email": "fonte.maurizio@gmail.com",
+            "homepage": "https://www.mauriziofonte.it"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "friendsofphp/php-cs-fixer": "^2.19"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0",
+        "psalm/plugin-phpunit": "^0.10.1",
+        "vimeo/psalm": "^3.11"
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Mfonte\\CodingStandard\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Mfonte\\CodingStandard\\Test\\": "tests"
+        }
+    }
+}
