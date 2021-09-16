@@ -8,6 +8,7 @@ use PHPUnit\Framework\TestCase;
 use Mfonte\CodingStandard\Ruleset\DefaultRuleset;
 use Mfonte\CodingStandard\Ruleset\Ruleset;
 use Mfonte\CodingStandard\Ruleset\CmsRuleset;
+use Mfonte\CodingStandard\Ruleset\LaravelRuleset;
 
 class RulesetTest extends TestCase
 {
@@ -19,6 +20,7 @@ class RulesetTest extends TestCase
         return [
             [new DefaultRuleset()],
             [new CmsRuleset()],
+            [new LaravelRuleset()],
         ];
     }
 
