@@ -108,9 +108,9 @@ final class LaravelRuleset extends AbstractRuleset
         // Magic constants should be referred to using the correct casing
         'magic_constant_casing' => true,
 
-        // In method arguments and method call, there MUST NOT be a space before each comma and 
+        // In method arguments and method call, there MUST NOT be a space before each comma and
         // there MUST be one space after each comma. Argument lists MAY be split across multiple
-        // lines, where each subsequent line is indented once. When doing so, the first item in the 
+        // lines, where each subsequent line is indented once. When doing so, the first item in the
         // list MUST be on the next line, and there MUST be only one argument per line.
         'method_argument_space' => true,
 
@@ -193,7 +193,9 @@ final class LaravelRuleset extends AbstractRuleset
         'switch_case_semicolon_to_colon' => true,
         'switch_case_space' => true,
         'ternary_operator_spaces' => true,
-        'trailing_comma_in_multiline_array' => true,
+        'trailing_comma_in_multiline' => [
+            'elements' => ['arrays'],
+        ],
         'trim_array_spaces' => true,
         'unary_operator_spaces' => true,
         'visibility_required' => [
