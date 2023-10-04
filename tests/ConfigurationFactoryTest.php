@@ -4,12 +4,16 @@ declare(strict_types=1);
 
 namespace Mfonte\CodingStandard\Test;
 
+use Prophecy\Prophet;
 use PHPUnit\Framework\TestCase;
 use Mfonte\CodingStandard\ConfigurationFactory;
 use Mfonte\CodingStandard\Ruleset\Ruleset;
 
 class ConfigurationFactoryTest extends TestCase
 {
+    /** @var Prophet */
+    private $prophet;
+    
     /**
      * @test
      * @covers \Mfonte\CodingStandard\ConfigurationFactory::fromRuleset
@@ -23,7 +27,7 @@ class ConfigurationFactoryTest extends TestCase
             ],
         ];
 
-        $ruleset = $this->prophesize(Ruleset::class);
+        $ruleset = $this->prophet->prophesize(Ruleset::class);
 
         $ruleset->getName()
             ->willReturn('test');
@@ -37,5 +41,15 @@ class ConfigurationFactoryTest extends TestCase
         self::assertTrue($config->getRiskyAllowed());
         self::assertSame('test', $config->getName());
         self::assertSame($rules, $config->getRules());
+    }
+
+    protected function setUp() : void
+    {
+        $this->prophet = new Prophet;
+    }
+
+    protected function tearDown() : void
+    {
+        $this->prophet->checkPredictions();
     }
 }

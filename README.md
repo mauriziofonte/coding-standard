@@ -3,11 +3,13 @@
 Mfonte Coding Standard is a [Composer](https://getcomposer.org) library that provides custom sets of rules
 for [php-cs-fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer) to keep our code style consistent across projects.
 
-**This library is intended for PHP CS Fixer v2**. It is still not ready for php-cs-fixer v3.
+**This library is intended for PHP CS Fixer v3**. It will **not** work with PHP CS Fixer v2.
+
+This library is targeted for projects relying on PHP versions from 7.4 onwards. It will **not** work with PHP versions below 7.4.
 
 ## Installation
 
-Use `composer` to install `mfonte/coding-standard`. `php-cs-fixer` v2 is automatically installed.
+Use `composer` to install `mfonte/coding-standard`. `php-cs-fixer` _v3_ is automatically installed.
 
 ```bash
 composer require --dev mfonte/coding-standard
@@ -32,6 +34,13 @@ The `Finder` can be configured to look for PHP files in a single path (as in the
 Is up to you choosing the best configuration based on your project structure.
 
 The caching mechanism of `php-cs-fixer` is enabled by default. You have to add `.php_cs.cache` to `.gitignore` file.
+
+## Available Rulesets
+
+- `DefaultRuleset` - The default ruleset customized as per the package maintainer projects
+- `LaravelRuleset` - The default ruleset for Laravel projects
+- `CmsRuleset` - The default ruleset for CMS projects
+- `WordpressRuleset` - The default ruleset for Wordpress projects
 
 ## Usage
 

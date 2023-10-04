@@ -6,7 +6,7 @@ namespace Mfonte\CodingStandard\Ruleset;
 
 final class LaravelRuleset extends AbstractRuleset
 {
-    protected $name = 'mfonte-laravel';
+    protected $name = 'mfonte-csrs-laravel';
 
     protected $rules = [
         // PHP arrays should be declared using the configured syntax.

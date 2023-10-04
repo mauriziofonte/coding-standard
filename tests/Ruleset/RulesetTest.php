@@ -15,7 +15,7 @@ class RulesetTest extends TestCase
     /**
      * @psalm-return list<array{Ruleset}>
      */
-    public function rulesetDataProvider(): array
+    public static function rulesetDataProvider(): array
     {
         return [
             [new DefaultRuleset()],

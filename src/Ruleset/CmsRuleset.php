@@ -6,7 +6,7 @@ namespace Mfonte\CodingStandard\Ruleset;
 
 final class CmsRuleset extends AbstractRuleset
 {
-    protected $name = 'mfonte-cms';
+    protected $name = 'mfonte-csrs-cms';
 
     protected $rules = [
         '@PSR2' => true,
