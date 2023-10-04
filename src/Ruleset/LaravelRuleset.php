@@ -39,7 +39,10 @@ final class LaravelRuleset extends AbstractRuleset
 
         // Class, trait and interface elements must be separated with one or none blank line.
         'class_attributes_separation' => [
-            'elements' => ['method']
+            'elements' => [
+                'method' => 'one',
+                'trait_import' => 'none'
+            ]
         ],
 
         // Whitespace around the keywords of a class, trait or interfaces definition should be one space.
@@ -126,7 +129,6 @@ final class LaravelRuleset extends AbstractRuleset
                 'extra',
                 'throw',
                 'use',
-                'use_trait',
             ]
         ],
 
