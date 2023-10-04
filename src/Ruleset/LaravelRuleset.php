@@ -94,7 +94,7 @@ final class LaravelRuleset extends AbstractRuleset
         'lowercase_cast' => true,
 
         // The PHP constants true, false, and null MUST be in lower case.
-        'lowercase_constants' => true,
+        'constant_case' => ['case' => 'lower'],
 
         // PHP keywords MUST be in lower case.
         'lowercase_keywords' => true,
@@ -164,7 +164,7 @@ final class LaravelRuleset extends AbstractRuleset
         'object_operator_without_whitespace' => true,
         'ordered_imports' => ['sortAlgorithm' => 'alpha'],
         'phpdoc_indent' => true,
-        'phpdoc_inline_tag' => true,
+        'phpdoc_inline_tag_normalizer' => true,
         'phpdoc_no_access' => true,
         'phpdoc_no_package' => true,
         'phpdoc_no_useless_inheritdoc' => true,
@@ -175,7 +175,7 @@ final class LaravelRuleset extends AbstractRuleset
         'phpdoc_trim' => true,
         'phpdoc_types' => true,
         'phpdoc_var_without_name' => true,
-        'psr4' => true,
+        'psr_autoloading' => true,
         'self_accessor' => true,
         'short_scalar_cast' => true,
         'simplified_null_return' => false, // disabled by Shift
