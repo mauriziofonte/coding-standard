@@ -15,7 +15,7 @@ final class LaravelRuleset extends AbstractRuleset
         // Binary operators should be surrounded by space as configured.
         'binary_operator_spaces' => [
             'default' => 'single_space',
-            'operators' => ['=>' => null]
+            'operators' => ['=>' => null],
         ],
 
         // There MUST be one blank line after the namespace declaration.
@@ -26,7 +26,7 @@ final class LaravelRuleset extends AbstractRuleset
 
         // An empty line feed must precede any configured statement.
         'blank_line_before_statement' => [
-            'statements' => ['return']
+            'statements' => ['return'],
         ],
 
         // The body of each structure MUST be enclosed by braces.
@@ -41,8 +41,8 @@ final class LaravelRuleset extends AbstractRuleset
         'class_attributes_separation' => [
             'elements' => [
                 'method' => 'one',
-                'trait_import' => 'none'
-            ]
+                'trait_import' => 'none',
+            ],
         ],
 
         // Whitespace around the keywords of a class, trait or interfaces definition should be one space.
@@ -50,7 +50,7 @@ final class LaravelRuleset extends AbstractRuleset
 
         // Concatenation should be spaced according configuration.
         'concat_space' => [
-            'spacing' => 'none'
+            'spacing' => 'none',
         ],
 
         // Equal sign in declare statement should be surrounded by spaces or not following configuration.
@@ -129,7 +129,7 @@ final class LaravelRuleset extends AbstractRuleset
                 'extra',
                 'throw',
                 'use',
-            ]
+            ],
         ],
 
         // There should be no empty lines after class opening brace.
@@ -141,11 +141,11 @@ final class LaravelRuleset extends AbstractRuleset
         'no_leading_import_slash' => true,
         'no_leading_namespace_whitespace' => true,
         'no_mixed_echo_print' => [
-            'use' => 'echo'
+            'use' => 'echo',
         ],
         'no_multiline_whitespace_around_double_arrow' => true,
         'multiline_whitespace_before_semicolons' => [
-            'strategy' => 'no_multi_line'
+            'strategy' => 'no_multi_line',
         ],
         'no_short_bool_cast' => true,
         'no_singleline_whitespace_before_semicolons' => true,
@@ -187,7 +187,7 @@ final class LaravelRuleset extends AbstractRuleset
         'single_import_per_statement' => true,
         'single_line_after_imports' => true,
         'single_line_comment_style' => [
-            'comment_types' => ['hash']
+            'comment_types' => ['hash'],
         ],
         'single_quote' => true,
         'space_after_semicolon' => true,
@@ -201,7 +201,7 @@ final class LaravelRuleset extends AbstractRuleset
         'trim_array_spaces' => true,
         'unary_operator_spaces' => true,
         'visibility_required' => [
-            'elements' => ['method', 'property']
+            'elements' => ['method', 'property'],
         ],
         'whitespace_after_comma_in_array' => true,
     ];

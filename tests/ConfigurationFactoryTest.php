@@ -4,18 +4,19 @@ declare(strict_types=1);
 
 namespace Mfonte\CodingStandard\Test;
 
-use Prophecy\Prophet;
-use PHPUnit\Framework\TestCase;
 use Mfonte\CodingStandard\ConfigurationFactory;
 use Mfonte\CodingStandard\Ruleset\Ruleset;
+use PHPUnit\Framework\TestCase;
+use Prophecy\Prophet;
 
 class ConfigurationFactoryTest extends TestCase
 {
     /** @var Prophet */
     private $prophet;
-    
+
     /**
      * @test
+     *
      * @covers \Mfonte\CodingStandard\ConfigurationFactory::fromRuleset
      */
     public function it_should_create_config(): void
@@ -43,12 +44,12 @@ class ConfigurationFactoryTest extends TestCase
         self::assertSame($rules, $config->getRules());
     }
 
-    protected function setUp() : void
+    protected function setUp(): void
     {
-        $this->prophet = new Prophet;
+        $this->prophet = new Prophet();
     }
 
-    protected function tearDown() : void
+    protected function tearDown(): void
     {
         $this->prophet->checkPredictions();
     }

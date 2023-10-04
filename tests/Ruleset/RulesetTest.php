@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace Mfonte\CodingStandard\Test\Ruleset;
 
-use PHPUnit\Framework\TestCase;
-use Mfonte\CodingStandard\Ruleset\DefaultRuleset;
-use Mfonte\CodingStandard\Ruleset\Ruleset;
 use Mfonte\CodingStandard\Ruleset\CmsRuleset;
+use Mfonte\CodingStandard\Ruleset\DefaultRuleset;
 use Mfonte\CodingStandard\Ruleset\LaravelRuleset;
+use Mfonte\CodingStandard\Ruleset\Ruleset;
+use PHPUnit\Framework\TestCase;
 
 class RulesetTest extends TestCase
 {
@@ -26,7 +26,9 @@ class RulesetTest extends TestCase
 
     /**
      * @test
+     *
      * @dataProvider rulesetDataProvider
+     *
      * @covers       \Mfonte\CodingStandard\Ruleset\AbstractRuleset
      */
     public function it_should_not_be_empty(Ruleset $ruleset): void

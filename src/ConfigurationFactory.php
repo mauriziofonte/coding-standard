@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Mfonte\CodingStandard;
 
-use PhpCsFixer\Config;
 use Mfonte\CodingStandard\Ruleset\Ruleset;
+use PhpCsFixer\Config;
 
 class ConfigurationFactory
 {

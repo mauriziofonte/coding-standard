@@ -13,6 +13,7 @@ abstract class AbstractRuleset implements Ruleset
 
     /**
      * @var array
+     *
      * @psalm-var array<string, bool|array>
      */
     protected $rules = [];
