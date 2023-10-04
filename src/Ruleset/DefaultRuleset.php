@@ -39,9 +39,6 @@ final class DefaultRuleset extends AbstractRuleset
         'fully_qualified_strict_types' => true,
         'function_typehint_space' => true,
         'include' => true,
-        'is_null' => [
-            'use_yoda_style' => false,
-        ],
         'linebreak_after_opening_tag' => true,
         'logical_operators' => true,
         'lowercase_cast' => true,
@@ -118,5 +115,10 @@ final class DefaultRuleset extends AbstractRuleset
         'trim_array_spaces' => true,
         'unary_operator_spaces' => true,
         'whitespace_after_comma_in_array' => true,
+        'yoda_style' => [
+            'equal' => false,
+            'identical' => false,
+            'less_and_greater' => false,
+        ],
     ];
 }
