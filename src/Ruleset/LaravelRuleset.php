@@ -164,7 +164,7 @@ final class LaravelRuleset extends AbstractRuleset
         'normalize_index_brace' => true,
         'not_operator_with_successor_space' => true,
         'object_operator_without_whitespace' => true,
-        'ordered_imports' => ['sortAlgorithm' => 'alpha'],
+        'ordered_imports' => ['sort_algorithm' => 'alpha'],
         'phpdoc_indent' => true,
         'phpdoc_inline_tag_normalizer' => true,
         'phpdoc_no_access' => true,
